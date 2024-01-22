@@ -19,7 +19,7 @@ jobs:
           node-version: 20
 
       - uses: brunojppb/decay@0.0.2
-        name: Decay server
+        name: Turborepo remove cache
         env:
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
