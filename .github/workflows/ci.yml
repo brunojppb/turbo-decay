@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
 
-      - uses: brunojppb/decay@4376cec617e2965080b2acf85cfaccfa3c2d3b25
+      - uses: brunojppb/decay@d8f701e0d68d8169ba2ebdb5810150ee59098f6a
         name: Turborepo remote cache
         env:
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
