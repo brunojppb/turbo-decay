@@ -4,6 +4,7 @@ env:
   TURBO_API: "http://127.0.0.1:8585"
   TURBO_TEAM: "decay"
   TURBO_TOKEN: "fake-token"
+  FORCE_COLOR: 2
 
 jobs:
   test:
@@ -18,7 +19,7 @@ jobs:
         with:
           node-version: 20
 
-      - uses: brunojppb/turbo-cache-server@1.0.0-beta2
+      - uses: brunojppb/decay@1.0.0
         name: Turborepo remote cache
         env:
           PORT: "8585"
