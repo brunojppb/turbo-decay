@@ -1,7 +1,7 @@
 name: Checks
 on: push
 env:
-  TURBO_API: "http://127.0.0.1:8000"
+  TURBO_API: "http://127.0.0.1:8585"
   TURBO_TEAM: "decay"
   TURBO_TOKEN: "fake-token"
   FORCE_COLOR: 2
@@ -22,6 +22,7 @@ jobs:
       - uses: brunojppb/decay@1.0.0
         name: Turborepo remote cache
         env:
+          PORT: "8585"
           S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
           S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
