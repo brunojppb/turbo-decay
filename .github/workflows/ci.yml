@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
 
-      - uses: brunojppb/turbo-cache-server@6513702d93df6b41a773345f0cdc11295464a372
+      - uses: brunojppb/turbo-cache-server@65f19df679cdb359fcd76a9616c3a80763c90cb0
         name: Turborepo remote cache
         env:
           PORT: "8585"
