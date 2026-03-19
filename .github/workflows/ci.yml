@@ -17,9 +17,9 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 24
 
-      - uses: brunojppb/turbo-cache-server@1.0.4
+      - uses: brunojppb/turbo-cache-server@9a66374dd7bfda2d9c7da40d575c069be30a1f73
         name: Turborepo remote cache
         env:
           PORT: "8585"
